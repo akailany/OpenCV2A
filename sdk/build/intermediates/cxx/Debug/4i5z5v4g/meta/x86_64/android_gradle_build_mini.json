@@ -1,0 +1,33 @@
+{
+  "buildFiles": [
+    "/Users/atiyakailany/Programs/csueastbay/ComputerVision/Exercises/OpenCV2A/sdk/libcxx_helper/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/atiyakailany/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+      "-C",
+      "/Users/atiyakailany/Programs/csueastbay/ComputerVision/Exercises/OpenCV2A/sdk/.cxx/Debug/4i5z5v4g/x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/atiyakailany/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+    "-C",
+    "/Users/atiyakailany/Programs/csueastbay/ComputerVision/Exercises/OpenCV2A/sdk/.cxx/Debug/4i5z5v4g/x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "opencv_jni_shared-Debug-x86_64": {
+      "artifactName": "opencv_jni_shared",
+      "buildCommandComponents": [
+        "/Users/atiyakailany/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja",
+        "-C",
+        "/Users/atiyakailany/Programs/csueastbay/ComputerVision/Exercises/OpenCV2A/sdk/.cxx/Debug/4i5z5v4g/x86_64",
+        "opencv_jni_shared"
+      ],
+      "abi": "x86_64",
+      "output": "/Users/atiyakailany/Programs/csueastbay/ComputerVision/Exercises/OpenCV2A/sdk/.cxx/Debug/4i5z5v4g/x86_64/libopencv_jni_shared.a",
+      "runtimeFiles": []
+    }
+  }
+}
