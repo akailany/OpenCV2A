@@ -194,29 +194,7 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
         //store in the imageMat (instance of OpenCV's Mat class, a 2D matrix) the RGB(A=alpha) image
         Mat imageMat = inputFrame.rgba();
 
-       /* note in an Java API based capture Activity you will have a method that is invoked when a
-          new frame is digitized and you will need to convert the image frame datastructure  object
-          from Java api to an OpenCV Mat object instance so it can be processed with OpenCV calls
-          Typically this means converting a Bitmap to an OpenCV Mat.
-             Mat  openCVMatImage =  new Mat (bmp.getWidth(), bmp.getHeight(), CvType.CV_8UC1);
-             Utils.bitmapToMat(bmp, openCVMatImage);
-          Then you can process it like  the following line that converts an rgb image to greyscale
-           in this call I am storing the results in the same Mat object
-              mgproc.cvtColor(openCVMatImage,openCVMatImage, Imgproc.COLOR_RGB2GRAY);
-       */
 
-
-        //Process Image as desired --note the following is commented out but gives you an idea
-        // now you use the Mat class to represent the Image and you can use method calls
-        // like imageMat
-        // make calls like to get a pixel at i,j imageMat.get
-        // double pixel[] = new double[3];
-        // pixel = imageMat.get(20,10); this wil retrieve pixel and column = 20, row =10
-        // similarly can set a pixel in Mat via imageMat.set(i,j,pixel);
-        // read API on Mat class for OPenCV
-        // A VERY USEFUL class to call image processing routines is ImagProc
-        // This code in comments shows how to do the Sobel Edge Detection on our image in imageMat
-        // init
         if (captureFlag) {
             Mat frame = inputFrame.gray();
             Mat detectedEdges = new Mat();
@@ -233,13 +211,6 @@ public class MainActivity extends AppCompatActivity implements CvCameraViewListe
             return res;
 
         }
-
-//        Mat gray = inputFrame.gray();
-//        Mat mIntermediateMat = new Mat();
-//        Imgproc.Sobel(gray, mIntermediateMat, CvType.CV_8U, 1, 1);
-//        Core.convertScaleAbs(mIntermediateMat, mIntermediateMat, 10, 0);
-//        Imgproc.cvtColor(mIntermediateMat, imageMat, Imgproc.COLOR_GRAY2BGRA, 4);
-
 
 
         //Return the Mat you want to be displayed in the JavaCameraView widget which invoked this method
